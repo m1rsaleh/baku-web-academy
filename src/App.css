@@ -6,7 +6,9 @@
   height: 40vmin;
   pointer-events: none;
 }
-
+.img{
+  animation: up-down 3s ease-in-out infinite alternate-reverse both;
+}
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
     animation: App-logo-spin infinite 20s linear;
@@ -27,12 +29,20 @@
 .App-link {
   color: #61dafb;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+@-webkit-keyframes up-down {
+  0% {
+    transform: translateY(10px);
   }
-  to {
-    transform: rotate(360deg);
+  100% {
+    transform: translateY(-10px);
   }
 }
+@keyframes up-down {
+  0% {
+    transform: translateY(10px);
+  }
+  100% {
+    transform: translateY(-10px);
+  }
+}
+

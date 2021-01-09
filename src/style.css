@@ -1,0 +1,43 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Noto Serif", serif;
+  }
+
+  img {
+    width: 900px;
+    height: 700px;
+  }
+  .img{
+    animation: up-down 2s ease-in-out infinite alternate-reverse both;
+  }
+  @media (max-width: 991px){
+    img{
+      margin-right: 2em;
+      width: 300px;
+      height: 300px;
+    }
+  }
+  
+  @-webkit-keyframes up-down {
+    0% {
+      transform: translateY(10px);
+    }
+    100% {
+      transform: translateY(-10px);
+    }
+  }
+  @keyframes up-down {
+    0% {
+      transform: translateY(10px);
+    }
+    100% {
+      transform: translateY(-10px);
+    }
+  }
+
+
+
+
+  
